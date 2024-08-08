@@ -27,22 +27,75 @@
 
 
 <body class="page-body">
-  <header class="header" data-test="header"></header>
+  <div class="wrapper">
+    <header class="header" data-test="header">
+      <nav class="navigation navigation--is-closed">
+        <div class="container">
+          <div class="navigation__wrapper">
+            <h1 class="visually-hidden">Lifetour. Организация походов в горы.</h1>
+            <button class="navigation__button" type="button"  tabindex="1" data-menu="burger-button" aria-label="Переключатель меню">
+              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
+                <use href="/__spritemap#sprite-burger-menu"></use>
+              </svg>
+              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+                <use href="/__spritemap#sprite-close-menu"></use>
+              </svg>
+            </button>
+            <a class="navigation__logo" href="#">
+              <svg width="142" height="42" viewBox="0 0 142 42" role="img">
+                <use href="/__spritemap#sprite-logotype"></use>
+              </svg>
+              <span class="visually-hidden">Логотип Lifetour</span>
+            </a>
+            <ul class="navigation__list" data-menu="burger-menu">
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">Туры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">Обучение</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="navigation__contact">
+              <a class="navigation__contact-phone" href="tel:+78000000000">8 800 000-00-00</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 
 
+    <main>
+      <section class="hero"></section>
+      <section class="tours"></section>
+      <section class="training"></section>
+      <section class="about"></section>
+      <section class="reviews"></section>
+      <section class="adv"></section>
+      <section class="gallery"></section>
+      <section class="form"></section>
+    </main>
 
-  <section class="hero"></section>
-  <section class="tours"></section>
-  <section class="training"></section>
-  <section class="about"></section>
-  <section class="reviews"></section>
-  <section class="adv"></section>
-  <section class="gallery"></section>
-  <section class="form"></section>
-  <footer class="footer"></footer>
+
+    <footer class="footer">
+    </footer>
+  </div>
+  <script></script>
 </body>
 
+</html>
 <!-- <body class="page-body"> -->
 <!-- пример использования спрайта -->
 <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -->
@@ -62,5 +115,3 @@
 <!-- <div data-test="footer">footer</div> -->
 <!-- <script type="module" src="js/main.js"></script> -->
 <!-- </body> -->
-
-</html>

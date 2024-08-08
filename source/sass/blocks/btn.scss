@@ -1,0 +1,35 @@
+.btn {
+  display: block;
+  width: 180px;
+  text-align: center;
+  background-color: $color-navy-blue;
+  padding: 21px 5px 19px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: $color-default-white;
+  border: 0;
+  user-select: none;
+  cursor: pointer;
+  appearance: none;
+  text-decoration: none;
+
+  @include without-outline;
+
+  @include hover-focus {
+    outline: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  @include disabled {
+    background-color: $color-nobel;
+    color: $color-default-white;
+  }
+
+}
