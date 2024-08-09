@@ -1,0 +1,20 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  overflow-y: auto;
+  background-color: $color-elephant-60;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity $trans-default, visibility $trans-default;
+  pointer-events: none;
+  -ms-overflow-style: none;
+}
+
+.overlay.is-active {
+  visibility: visible;
+  opacity: 1;
+}

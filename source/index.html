@@ -29,15 +29,16 @@
 <body class="page-body">
   <div class="wrapper">
     <header class="header" data-test="header">
-      <nav class="navigation navigation--is-closed">
-        <div class="container">
+      <div class="container">
+        <nav class="navigation navigation--is-closed" data-menu="nav-menu">
           <div class="navigation__wrapper">
             <h1 class="visually-hidden">Lifetour. Организация походов в горы.</h1>
-            <button class="navigation__button" type="button"  tabindex="1" data-menu="burger-button" aria-label="Переключатель меню">
-              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
+            <button class="navigation__button" type="button" tabindex="1" data-menu="burger-button"
+              aria-label="Переключатель меню">
+              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="closed-button">
                 <use href="/__spritemap#sprite-burger-menu"></use>
               </svg>
-              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+              <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="opened-button">
                 <use href="/__spritemap#sprite-close-menu"></use>
               </svg>
             </button>
@@ -48,22 +49,22 @@
               <span class="visually-hidden">Логотип Lifetour</span>
             </a>
             <ul class="navigation__list" data-menu="burger-menu">
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="item-menu">
                 <a class="navigation__item-link" href="#">Туры</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="itme-menu">
                 <a class="navigation__item-link" href="#">Обучение</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="item-menu">
                 <a class="navigation__item-link" href="#">О нас</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="item-menu">
                 <a class="navigation__item-link" href="#">Отзывы</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="item-menu">
                 <a class="navigation__item-link" href="#">Фотографии</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item" data-menu="item-menu">
                 <a class="navigation__item-link" href="#">Контакты</a>
               </li>
             </ul>
@@ -71,8 +72,8 @@
               <a class="navigation__contact-phone" href="tel:+78000000000">8 800 000-00-00</a>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
 
@@ -92,7 +93,8 @@
     <footer class="footer">
     </footer>
   </div>
-  <script></script>
+  <div class="overlay" data-burger="overlay"></div>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
