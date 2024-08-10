@@ -56,9 +56,9 @@
 
 
   &:focus:not([disabled]) {
-    svg{
-    opacity: 100%;
-    color: $color-elephant;
+    svg {
+      opacity: 100%;
+      color: $color-elephant;
     }
   }
 
@@ -111,13 +111,16 @@
   &:hover:not([disabled]) {
     opacity: 50%;
   }
+
   &:focus:not([disabled]) {
     opacity: 100%;
     color: $color-elephant;
   }
+
   &:active:not([disabled]) {
     color: $color-resolution-blue;
   }
+
   &[disabled] {
     color: $color-nobel;
     cursor: default;
@@ -142,6 +145,10 @@
     display: none;
     position: absolute;
     margin: 0;
+    padding-top: 34px;
+    padding-left: 36px;
+    padding-bottom: 54px;
+    gap: 6px;
     top: 74px;
     left: 0;
     max-width: 1440px;
@@ -153,7 +160,12 @@
 
   @include vp-767 {
     position: static;
+    margin-left: -9px;
+    padding: 11px 0;
+    padding-bottom: 34px;
+    gap: 2px;
     grid-area: list;
+
   }
 }
 
@@ -186,14 +198,17 @@
   @include vp-1440 {
     bottom: 5px;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
+    letter-spacing: 0.5px;
   }
 
-  &:hover::after{
+  &:hover::after {
     display: block;
   }
 

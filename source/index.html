@@ -90,7 +90,121 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__titel">
+              <div class="footer__titel-wrapper">
+                <h2 data-titel-tag="Контакты">Контакты</h2>
+                <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+                  увлекательными историями и подобрать для вас тур.</p>
+              </div>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">
+                    <svg width="23" height="23" viewBox="0 0 23 23" role="img">
+                      <use href="/__spritemap#sprite-phone"></use>
+                    </svg>
+                    <h3>Телефон</h3>
+                    <p>+7 983 745-45-45</p>
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">
+                    <svg width="23" height="23" viewBox="0 0 23 23" role="img">
+                      <use href="/__spritemap#sprite-mail"></use>
+                    </svg>
+                    <h3>Email</h3>
+                    <p>info@lifetour.com</p>
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <svg width="23" height="23" viewBox="0 0 23 23" role="img">
+                    <use href="/__spritemap#sprite-pin"></use>
+                  </svg>
+                  <h3>Адрес</h3>
+                  <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="320" height="343"
+                  srcset="./img//conten/footer/map-mobile@1x.webp 1x, ./img//conten/footer/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)" width="768" height="340"
+                  srcset="./img//conten/footer/map-tablet@1x.webp 1x, ./img//conten/footer/map-tablet@2x.webp 2x">
+                <source type="image/webp" width="600" height="324"
+                  srcset="./img//conten/footer/map-desktop@1x.webp 1x, ./img//conten/footer/map-desktop@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="320" height="343"
+                  srcset="./img//conten/footer/map-mobile@1x.jpg 1x, ./img//conten/footer/map-mobile@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1365px)" width="768" height="340"
+                  srcset="./img//conten/footer/map-tablet@1x.jpg 1x, ./img//conten/footer/map-tablet@2x.jpg 2x">
+                <img src="./img//conten/footer/map-desktop@1x.jpg" width="600" height="324"
+                  srcset="./img//conten/footer/map-desktop@2x.jpg" alt="Изображение адреса на карте.">
+              </picture>
+            </div>
+          </div>
+          <div class="footer__navigation navigation-footer">
+            <div class="navigation-footer__wrapper">
+              <a class="navigation-footer__logo" href="#">
+                <svg width="142" height="42" viewBox="0 0 142 42" role="img">
+                  <use href="/__spritemap#sprite-logotype"></use>
+                </svg>
+              </a>
+              <ul class="navigation-footer__list">
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">Туры</a>
+                </li>
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">Обучение</a>
+                </li>
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">О нас</a>
+                </li>
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">Отзывы</a>
+                </li>
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">Фотографии</a>
+                </li>
+                <li class="navigation-footer__item">
+                  <a class="navigation-footer__item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="navigation-footer__contact">
+                <a class="navigation-footer__contact-phone" href="tel:+78000000000">8 800 000-00-00</a>
+              </div>
+            </div>
+            <div class="navigation-footer__social">
+              <ul class="navigation-footer__social-list">
+                <li class="navigation-footer__social-item">
+                  <a class="navigation-footer__social-link" href="#">
+                    <svg width="16" height="9" viewBox="0 0 16 9" role="img">
+                      <use href="/__spritemap#sprite-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="navigation-footer__social-item">
+                  <a class="navigation-footer__social-link" href="#">
+                    <svg width="16" height="9" viewBox="0 0 16 9" role="img">
+                      <use href="/__spritemap#sprite-odnoklassniki"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="navigation-footer__social-item">
+                  <a class="navigation-footer__social-link" href="#">
+                    <svg width="16" height="9" viewBox="0 0 16 9" role="img">
+                      <use href="/__spritemap#sprite-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <span>Политика конфиденциальности</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
   <div class="overlay" data-burger="overlay"></div>
