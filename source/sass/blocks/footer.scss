@@ -179,13 +179,6 @@
   position: relative;
   margin-top: 25px;
   width: 100%;
-
-  &::after {
-    position: absolute;
-    bottom: 158px;
-    right: 199px;
-    content: url(../../img/sprite/pin-map.svg);
-  }
 }
 
 .footer__map img {
