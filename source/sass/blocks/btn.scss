@@ -16,8 +16,14 @@
 
   @include without-outline;
 
-  @include hover-focus {
+  @include hover {
     outline: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+  }
+
+  @include focus {
+    outline: 1px solid $color-transparent;
     background-color: $color-default-white;
     color: $color-resolution-blue;
   }

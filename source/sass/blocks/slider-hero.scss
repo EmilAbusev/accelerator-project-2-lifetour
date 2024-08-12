@@ -1,0 +1,276 @@
+.slider-hero__slide {
+  background-color: #2d383f;
+  height: auto;
+}
+
+
+.slider-hero__slide .container {
+  margin: 0 auto;
+  padding: 0;
+  padding: 0 70px;
+
+  @include vp-1440 {
+    padding: 0 40px;
+  }
+
+  @include vp-767 {
+    padding: 0 9px;
+  }
+}
+
+
+.slider-hero__content {
+  display: flex;
+  position: relative;
+  padding-top: 199px;
+  padding-bottom: 81px;
+
+  @include vp-1440 {
+    padding-top: 342px;
+    padding-bottom: 403px;
+  }
+
+  @include vp-767 {
+    padding-top: 144px;
+    padding-bottom: 161px;
+  }
+}
+
+.slider-hero__content-tablet {
+
+  @include vp-1440 {
+    padding-top: 135px;
+    padding-bottom: 610px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    padding-top: 144px;
+    padding-bottom: 140px;
+  }
+}
+
+.slider-hero__content-mobile {
+  @include vp-767 {
+    padding-bottom: 114px;
+  }
+}
+
+.slider-hero__background {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-hero__background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-hero__titel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 50px;
+  max-width: 921px;
+  color: $color-default-white;
+  gap: 134px;
+  z-index: 3;
+
+  @include vp-1440 {
+    margin: 0 auto;
+  }
+}
+
+.slider-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @include vp-1440 {
+    text-align: center;
+    align-items: center;
+    gap: 13px;
+  }
+
+  @include vp-767 {
+    gap: 16px;
+  }
+}
+
+.slider-hero__text h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 77px;
+  line-height: 77px;
+
+  @include vp-1440 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.slider-hero__text p {
+  margin: 0;
+  margin-right: 450px;
+  font-size: 17px;
+
+  @include vp-1440 {
+    margin: 0 80px;
+  }
+
+  @include vp-767 {
+    margin: 0 -3px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.slider-hero__button {
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  @include vp-1440 {
+    margin-top: 24px;
+  }
+
+  @include vp-767 {
+    margin-top: 44px;
+  }
+}
+
+.slider-hero__detalis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include vp-1440 {
+    display: none;
+  }
+}
+
+.slider-hero__detalis-item {
+  display: flex;
+  padding: 13px 20px;
+  padding-left: 14px;
+  align-items: center;
+  border: 1px solid $color-white-50;
+}
+
+.slider-hero__detalis-item svg {
+  margin-left: 5px;
+}
+
+.slider-hero__detalis-item p {
+  margin: 0;
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.slider-hero__photo {
+  position: absolute;
+  top: 187px;
+  right: 51px;
+  width: 410px;
+  height: 459px;
+  z-index: 2;
+
+  @include vp-1440 {
+    width: 442px;
+    height: 365px;
+    top: 476px;
+    right: 115px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.slider-hero__photo img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper .swiper-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 116px;
+  padding-bottom: 85px;
+  justify-content: end;
+  right: 0;
+  gap: 12px;
+  bottom: 97px;
+
+  @include vp-1440 {
+    padding: 0;
+    padding-bottom: 33px;
+    justify-content: center;
+  }
+}
+
+
+.slider-hero__pagination .swiper-pagination-bullet {
+  padding: 9px;
+  border: 1px solid $color-default-white;
+  background: $color-transparent;
+  opacity: 100%;
+  outline: none;
+
+  @include vp-767 {
+    padding: 7px;
+  }
+
+  &:hover:not([disabled]) {
+    background-color: $color-gainsboro;
+    border: 1px solid $color-default-white;
+  }
+
+  &:focus:not([disabled]) {
+    opacity: 100%;
+    background-color: $color-transparent;
+    border: 1px solid $color-default-white;
+    outline: 1px solid $color-white-50;
+  }
+
+  &:active:not([disabled]) {
+    opacity: 50%;
+    background-color: $color-default-white;
+    border: 1px solid $color-default-white;
+  }
+
+  &[disabled] {
+    opacity: 25%;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.slider-hero__pagination .swiper-pagination-bullet-active {
+  background: $color-default-white;
+
+  &:hover:not([disabled]) {
+    opacity: 100%;
+  }
+
+  &:focus:not([disabled]) {
+    opacity: 100%;
+  }
+
+  &:active:not([disabled]) {
+    opacity: 100%;
+  }
+}
