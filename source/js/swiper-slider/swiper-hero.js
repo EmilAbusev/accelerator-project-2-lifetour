@@ -1,4 +1,5 @@
-import Swiper from 'swiper';
+
+import Swiper from 'swiper/bundle';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,21 +15,23 @@ const heroSwiper = () => {
       clickable: true,
       type: 'bullets',
     },
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
 
     breakpoints: {
       1439: {
         allowTouchMove: false,
       }
     },
-
-    loop: true,
   });
 };
 
-const initSwiper = () => {
+const initHeroSwiper = () => {
   if (document.contains(swiperSlider)) {
     heroSwiper();
   }
 };
 
-export { initSwiper };
+export { initHeroSwiper };
