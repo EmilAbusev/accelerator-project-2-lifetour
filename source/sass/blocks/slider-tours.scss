@@ -1,0 +1,76 @@
+.slider-tours {
+
+}
+
+.slider-tours__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-tours__item {
+  position: relative;
+  max-width: 380px;
+  height: auto;
+  color: $color-default-white;
+}
+
+.slider-tours__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slider-tours__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-tours__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-tours__content h3 {
+
+}
+
+.slider-tours__description {
+  display: flex;
+}
+
+.slider-tours__description-text {
+
+}
+
+.slider-tours__description-text svg {
+
+}
+
+.slider-tours__description-text p {
+
+}
+
+.slider-tours__details {
+  display: flex;
+}
+
+.slider-tours__details-text {
+
+}
+
+.slider-tours__details-text p {
+
+}
+
+.slider-tours__details-text svg {
+
+}
+
+.slider-tours__details-text span {
+
+}

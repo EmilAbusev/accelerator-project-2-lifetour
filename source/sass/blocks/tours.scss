@@ -1,0 +1,54 @@
+.tours {
+
+}
+
+.tours .container {
+
+}
+
+.tours__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tours__wrapper h2 {
+
+}
+
+.tours__navigation {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tours__navigation-prev {
+
+}
+
+.tours__navigation-prev  svg {
+
+}
+
+.tours__navigation-next {
+
+}
+
+.tours__navigation-next svg {
+  transform: rotate(180deg);
+}
+
+.tours__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tours__link p {
+
+}
+
+.tours__link svg {
+
+}
