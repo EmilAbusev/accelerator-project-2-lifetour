@@ -6,6 +6,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initBurgerMenu} from './nav-menu/burger-menu';
 import {initHeroSwiper} from './swiper-slider/swiper-hero';
+import {initToursSwiper} from './swiper-slider/swiper-tours';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,5 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initBurgerMenu();
     initHeroSwiper();
+    initToursSwiper();
   });
 });

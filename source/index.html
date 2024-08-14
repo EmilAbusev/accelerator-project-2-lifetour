@@ -33,7 +33,7 @@
         <nav class="navigation navigation--is-closed" data-menu="nav-menu">
           <div class="navigation__wrapper">
             <h1 class="visually-hidden">Lifetour. Организация походов в горы.</h1>
-            <button class="navigation__button" type="button" tabindex="1" data-menu="burger-button"
+            <button class="navigation__button" type="button" tabindex="0" data-menu="burger-button"
               aria-label="Переключатель меню">
               <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="closed-button">
                 <use href="/__spritemap#sprite-burger-menu"></use>
@@ -106,7 +106,7 @@
                       <h2>Захватывающие вершины Кавказа</h2>
                       <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход
                         на вершину горы Чегет.</p>
-                      <button class="slider-hero__button btn" tabindex="2" type="button">Смотреть тур</button>
+                      <button class="slider-hero__button btn" type="button">Смотреть тур</button>
                     </div>
                     <div class="slider-hero__detalis">
                       <div class="slider-hero__detalis-item">
@@ -152,7 +152,7 @@
                         природа Камчатки</h2>
                       <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
                         нетронутых уголков дикой природы в мире.</p>
-                      <button class="slider-hero__button btn" tabindex="2" type="button">Смотреть тур</button>
+                      <button class="slider-hero__button btn" type="button">Смотреть тур</button>
                     </div>
                     <div class="slider-hero__detalis">
                       <div class="slider-hero__detalis-item">
@@ -208,7 +208,7 @@
                       <h2>Магические пейзажи Алтайского Края</h2>
                       <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
                         дух ландшафтов Алтайских гор.</p>
-                      <button class="slider-hero__button btn" tabindex="2" type="button">Смотреть тур</button>
+                      <button class="slider-hero__button btn" type="button">Смотреть тур</button>
                     </div>
                     <div class="slider-hero__detalis">
                       <div class="slider-hero__detalis-item">
@@ -237,71 +237,252 @@
       <section class="tours" data-test="tours">
         <div class="container">
           <div class="tours__wrapper">
-            <h2>Ближайшие туры</h2>
+            <h2 data-titel-tag="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__navigation">
-            <div class="tours__navigation-prev btn">
-              <svg width="13" height="13" viewBox="0 0 13 13" role="img">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </div>
-            <div class="tours__navigation-next btn">
-              <svg width="13" height="13" viewBox="0 0 13 13" role="img">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </div>
+              <div class="tours__navigation-prev tours__navigation-button btn" tabindex="0">
+                <svg width="13" height="13" viewBox="0 0 13 13" role="img">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Кнопка переключения слайдов, назад.</span>
+              </div>
+              <div class="tours__navigation-next tours__navigation-button btn" tabindex="0">
+                <svg width="13" height="13" viewBox="0 0 13 13" role="img">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Кнопка переключения слайдов, вперед.</span>
+              </div>
             </div>
             <div class="slider-tours swiper">
               <ul class="slider-tours__list swiper-wrapper">
                 <li class="slider-tours__item swiper-slide">
-                    <div class="slider-tours__background">
-                      <picture>
-                        <source type="image/webp" media="(max-width: 767px)" width="290" height="416" srcset="./img/conten/tours/tours-mobile-photo1@1x.webp 1x, ./img/conten/tours/tours-mobile-photo1@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1439px)" width="330" height="416" srcset="./img/conten/tours/tours-tablet-photo1@1x.webp 1x, ./img/conten/tours/tours-tablet-photo1@2x.webp 2x">
-                        <source type="image/webp" width="380" height="416" srcset="./img/conten/tours/tours-desktop-photo1@1x.webp 1x, ./img/conten/tours/tours-desktop-photo1@2x.webp 2x">
-                        <source type="image/jpeg" media="(max-width: 767px)" width="290" height="416" srcset="./img/conten/tours/tours-mobile-photo1@1x.jpg 1x, ./img/conten/tours/tours-mobile-photo1@2x.jpg 2x">
-                        <source type="image/jpeg" media="(max-width: 1439px)" width="330" height="416" srcset="./img/conten/tours/tours-tablet-photo1@1x.jpg 1x, ./img/conten/tours/tours-tablet-photo1@2x.jpg 2x">
-                        <img src="./img/conten/tours/tours-desktop-photo1@1x.jpg" width="380" height="416"
-                          srcset="./img/conten/tours/tours-desktop-photo1@2x.jpg 2x" alt="Фотография гор Кваказа">
-                      </picture>
-                    </div>
-                    <div class="slider-tours__content">
-                      <div class="slider-tours__description">
-                        <div class="slider-tours__description-text">
-                          <svg width="9" height="12" viewBox="0 0 9 12" role="img">
-                            <use href="/__spritemap#sprite-pin"></use>
-                          </svg>
-                          <p>Кавказ</p>
-                        </div>
-                        <div class="slider-tours__description-text">
+                  <div class="slider-tours__background">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo1@1x.webp 1x, ./img/conten/tours/tours-mobile-photo1@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo1@1x.webp 1x, ./img/conten/tours/tours-tablet-photo1@2x.webp 2x">
+                      <source type="image/webp" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo1@1x.webp 1x, ./img/conten/tours/tours-desktop-photo1@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo1@1x.jpg 1x, ./img/conten/tours/tours-mobile-photo1@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo1@1x.jpg 1x, ./img/conten/tours/tours-tablet-photo1@2x.jpg 2x">
+                      <img src="./img/conten/tours/tours-desktop-photo1@1x.jpg" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo1@2x.jpg 2x" alt="Фотография гор Кваказа">
+                    </picture>
+                  </div>
+                    <div class="slider-tours__description">
+                      <div class="slider-tours__description-location">
+                        <svg width="9" height="12" viewBox="0 0 9 12" role="img">
+                          <use href="/__spritemap#sprite-pin-tours"></use>
+                        </svg>
+                        <p>Кавказ</p>
+                      </div>
+                      <div class="slider-tours__description-duration">
+                        <div class="slider-tours__description-days">
                           <svg width="20" height="20" viewBox="0 0 20 20" role="img">
                             <use href="/__spritemap#sprite-sun"></use>
                           </svg>
                           <p>4 дня</p>
                         </div>
-                        <div class="slider-tours__description-text">
+                        <div class="slider-tours__description-night">
                           <svg width="16" height="16" viewBox="0 0 16 16" role="img">
                             <use href="/__spritemap#sprite-moon"></use>
                           </svg>
                           <p>3 ночи</p>
                         </div>
                       </div>
-                      <h3>Путешествие
-                        вокруг Эльбруса</h3>
-                      <div class="slider-tours__details">
-                        <div class="slider-tours__details-text">
-                          <p>Сложность:</p>
-                          <svg width="84" height="16" viewBox="0 0 84 16" role="img">
-                            <use href="/__spritemap#sprite-stars-4"></use>
+                    </div>
+                    <h3>Путешествие
+                      вокруг Эльбруса</h3>
+                    <div class="slider-tours__details">
+                      <div class="slider-tours__details-text">
+                        <p>Сложность:</p>
+                        <svg width="84" height="16" viewBox="0 0 84 16" role="img">
+                          <use href="/__spritemap#sprite-stars-4"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Даты набора:</p>
+                        <span>12.06–19.06</span>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </div>
+                    </div>
+                </li>
+                <li class="slider-tours__item swiper-slide">
+                  <div class="slider-tours__background">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo2@1x.webp 1x, ./img/conten/tours/tours-mobile-photo2@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo2@1x.webp 1x, ./img/conten/tours/tours-tablet-photo2@2x.webp 2x">
+                      <source type="image/webp" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo2@1x.webp 1x, ./img/conten/tours/tours-desktop-photo2@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo2@1x.jpg 1x, ./img/conten/tours/tours-mobile-photo2@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo2@1x.jpg 1x, ./img/conten/tours/tours-tablet-photo2@2x.jpg 2x">
+                      <img src="./img/conten/tours/tours-desktop-photo2@1x.jpg" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo2@2x.jpg 2x" alt="Фотография гор Кваказа">
+                    </picture>
+                  </div>
+                    <div class="slider-tours__description">
+                      <div class="slider-tours__description-location">
+                        <svg width="9" height="12" viewBox="0 0 9 12" role="img">
+                          <use href="/__spritemap#sprite-pin-tours"></use>
+                        </svg>
+                        <p>Алтай</p>
+                      </div>
+                      <div class="slider-tours__description-duration">
+                        <div class="slider-tours__description-days">
+                          <svg width="20" height="20" viewBox="0 0 20 20" role="img">
+                            <use href="/__spritemap#sprite-sun"></use>
                           </svg>
+                          <p>14 дней</p>
                         </div>
-                        <div class="slider-tours__details-text">
-                          <p>Даты набора:</p>
-                          <span>12.06–19.06</span>
+                        <div class="slider-tours__description-night">
+                          <svg width="16" height="16" viewBox="0 0 16 16" role="img">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <p>13 ночей</p>
                         </div>
-                        <div class="slider-tours__details-text">
-                          <p>Группа:</p>
-                          <span>до 15 чел.</span>
+                      </div>
+                    </div>
+                    <h3>Путь к подножию
+                      Белухи</h3>
+                    <div class="slider-tours__details">
+                      <div class="slider-tours__details-text">
+                        <p>Сложность:</p>
+                        <svg width="84" height="16" viewBox="0 0 84 16" role="img">
+                          <use href="/__spritemap#sprite-stars-3"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Даты набора:</p>
+                        <span>14.06–23.06</span>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Группа:</p>
+                        <span>до 25 чел.</span>
+                      </div>
+                    </div>
+                </li>
+                <li class="slider-tours__item swiper-slide">
+                  <div class="slider-tours__background">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo3@1x.webp 1x, ./img/conten/tours/tours-mobile-photo3@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo3@1x.webp 1x, ./img/conten/tours/tours-tablet-photo3@2x.webp 2x">
+                      <source type="image/webp" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo3@1x.webp 1x, ./img/conten/tours/tours-desktop-photo3@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo3@1x.jpg 1x, ./img/conten/tours/tours-mobile-photo3@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo3@1x.jpg 1x, ./img/conten/tours/tours-tablet-photo3@2x.jpg 2x">
+                      <img src="./img/conten/tours/tours-desktop-photo3@1x.jpg" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo3@2x.jpg 2x" alt="Фотография гор Кваказа">
+                    </picture>
+                  </div>
+                    <div class="slider-tours__description">
+                      <div class="slider-tours__description-location">
+                        <svg width="9" height="12" viewBox="0 0 9 12" role="img">
+                          <use href="/__spritemap#sprite-pin-tours"></use>
+                        </svg>
+                        <p>Адыгея</p>
+                      </div>
+                      <div class="slider-tours__description-duration">
+                        <div class="slider-tours__description-days">
+                          <svg width="20" height="20" viewBox="0 0 20 20" role="img">
+                            <use href="/__spritemap#sprite-sun"></use>
+                          </svg>
+                          <p>7 дней</p>
                         </div>
+                        <div class="slider-tours__description-night">
+                          <svg width="16" height="16" viewBox="0 0 16 16" role="img">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <p>6 ночей</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Через Фишт
+                      к Чёрному морю и обратно</h3>
+                    <div class="slider-tours__details">
+                      <div class="slider-tours__details-text">
+                        <p>Сложность:</p>
+                        <svg width="84" height="16" viewBox="0 0 84 16" role="img">
+                          <use href="/__spritemap#sprite-stars-4"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Даты набора:</p>
+                        <span>15.07–19.07</span>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Группа:</p>
+                        <span>до 22 чел.</span>
+                      </div>
+                    </div>
+                </li>
+                <li class="slider-tours__item swiper-slide">
+                  <div class="slider-tours__background">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo4@1x.webp 1x, ./img/conten/tours/tours-mobile-photo4@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo4@1x.webp 1x, ./img/conten/tours/tours-tablet-photo4@2x.webp 2x">
+                      <source type="image/webp" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo4@1x.webp 1x, ./img/conten/tours/tours-desktop-photo4@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="416"
+                        srcset="./img/conten/tours/tours-mobile-photo4@1x.jpg 1x, ./img/conten/tours/tours-mobile-photo4@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="330" height="416"
+                        srcset="./img/conten/tours/tours-tablet-photo4@1x.jpg 1x, ./img/conten/tours/tours-tablet-photo4@2x.jpg 2x">
+                      <img src="./img/conten/tours/tours-desktop-photo4@1x.jpg" width="380" height="416"
+                        srcset="./img/conten/tours/tours-desktop-photo4@2x.jpg 2x" alt="Фотография гор Кваказа">
+                    </picture>
+                  </div>
+                    <div class="slider-tours__description">
+                      <div class="slider-tours__description-location">
+                        <svg width="9" height="12" viewBox="0 0 9 12" role="img">
+                          <use href="/__spritemap#sprite-pin-tours"></use>
+                        </svg>
+                        <p>Урал</p>
+                      </div>
+                      <div class="slider-tours__description-duration">
+                        <div class="slider-tours__description-days">
+                          <svg width="20" height="20" viewBox="0 0 20 20" role="img">
+                            <use href="/__spritemap#sprite-sun"></use>
+                          </svg>
+                          <p>9 дней</p>
+                        </div>
+                        <div class="slider-tours__description-night">
+                          <svg width="16" height="16" viewBox="0 0 16 16" role="img">
+                            <use href="/__spritemap#sprite-moon"></use>
+                          </svg>
+                          <p>10 ночей</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Восхождение
+                      Манарага</h3>
+                    <div class="slider-tours__details">
+                      <div class="slider-tours__details-text">
+                        <p>Сложность:</p>
+                        <svg width="84" height="16" viewBox="0 0 84 16" role="img">
+                          <use href="/__spritemap#sprite-stars-5"></use>
+                        </svg>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Даты набора:</p>
+                        <span>12.07–19.07</span>
+                      </div>
+                      <div class="slider-tours__details-text">
+                        <p>Группа:</p>
+                        <span>до 7 чел.</span>
                       </div>
                     </div>
                 </li>

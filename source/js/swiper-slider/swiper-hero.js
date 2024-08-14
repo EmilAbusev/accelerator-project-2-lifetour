@@ -4,10 +4,10 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const swiperSlider = document.querySelector('.swiper');
-const swiperPagination = document.querySelector('.swiper-pagination');
+const swiperSlider = document.querySelector('.slider-hero');
+const swiperPagination = document.querySelector('.slider-hero__pagination');
 
-const heroSwiper = () => {
+const mySwiper = () => {
   new Swiper(swiperSlider, {
     modules: [Pagination],
     pagination: {
@@ -21,7 +21,7 @@ const heroSwiper = () => {
     loop: true,
 
     breakpoints: {
-      1439: {
+      1440: {
         allowTouchMove: false,
       }
     },
@@ -30,7 +30,7 @@ const heroSwiper = () => {
 
 const initHeroSwiper = () => {
   if (document.contains(swiperSlider)) {
-    heroSwiper();
+    mySwiper();
   }
 };
 
