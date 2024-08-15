@@ -3,6 +3,7 @@
 }
 
 .tours__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 122px 0;
@@ -16,31 +17,28 @@
   }
 }
 
-.tours__wrapper::before {
+.tours__background {
+  display: flex;
   position: absolute;
   top: -127px;
-  right: 0;
+  right: -120px;
   width: 602px;
   height: 1630px;
-  background-image: url(../../img/conten/tours/clouds-desktop.png);
-  background-repeat: no-repeat;
   z-index: -1;
-  content: "";
+
 
   @include vp-1440 {
     width: 425px;
     height: 1215px;
     top: -93px;
-    right: 0;
-    background-image: url(../../img/conten/tours/clouds-tablet.png);
+    right: -45px;
   }
 
   @include vp-767 {
     width: 141px;
     height: 595px;
     top: 9px;
-    right: 0;
-    background-image: url(../../img/conten/tours/clouds-mobile.png);
+    right: -15px;
   }
 }
 
@@ -95,14 +93,17 @@
 
 .tours__navigation {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   top: 119px;
   right: 0;
+  padding-right: 0;
+  max-width: 320px;
+  justify-content: end;
   gap: 4px;
 
   @include vp-1440 {
     top: 59px;
-    right: 45px;
   }
 
   @include vp-767 {
@@ -142,27 +143,30 @@
   }
 
   &:hover:not([disabled]) {
-    p{
-    color: $color-navy-blue-10;
+    p {
+      color: $color-navy-blue-10;
     }
+
     svg {
       stroke: $color-navy-blue-10;
     }
   }
 
   &:focus:not([disabled]) {
-    p{
-    color: $color-navy-blue;
+    p {
+      color: $color-navy-blue;
     }
+
     svg {
       stroke: $color-navy-blue;
     }
   }
 
   &:active:not([disabled]) {
-    p{
-    color: $color-resolution-blue;
+    p {
+      color: $color-resolution-blue;
     }
+
     svg {
       stroke: $color-resolution-blue;
     }
@@ -171,12 +175,14 @@
   &[disabled] {
     cursor: default;
     pointer-events: none;
-    p{
+
+    p {
       color: $color-nobel;
-      }
-      svg {
-        stroke: $color-nobel;
-      }
+    }
+
+    svg {
+      stroke: $color-nobel;
+    }
   }
 }
 

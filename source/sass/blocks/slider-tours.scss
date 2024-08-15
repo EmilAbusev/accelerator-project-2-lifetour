@@ -22,34 +22,6 @@
 }
 
 
-.slider-tours__list::before {
-  position: absolute;
-  top: -127px;
-  left: 718px;
-  width: 602px;
-  height: 1630px;
-  background-image: url(../../img/conten/tours/clouds-desktop.png);
-  background-repeat: no-repeat;
-  z-index: -1;
-  content: "";
-
-  @include vp-1440 {
-    width: 425px;
-    height: 1215px;
-    top: -93px;
-    left: 298px;
-    background-image: url(../../img/conten/tours/clouds-tablet.png);
-  }
-
-  @include vp-767 {
-    width: 141px;
-    height: 595px;
-    top: 9px;
-    left: 164px;
-    background-image: url(../../img/conten/tours/clouds-mobile.png);
-  }
-}
-
 .slider-tours__list .swiper-slide {
   display: flex;
 }
