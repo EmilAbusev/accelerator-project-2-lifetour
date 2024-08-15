@@ -16,26 +16,30 @@
 
   @include without-outline;
 
-  @include hover {
+  &:hover:not([disabled]) {
     outline: 1px solid $color-resolution-blue;
     background-color: $color-default-white;
     color: $color-resolution-blue;
   }
 
-  @include focus {
+  &:focus:not([disabled]) {
     outline: 1px solid $color-transparent;
     background-color: $color-default-white;
     color: $color-resolution-blue;
   }
 
-  @include active {
+  &:active:not([disabled]) {
     background-color: $color-resolution-blue;
     color: $color-default-white;
   }
 
-  @include disabled {
+  &[disabled] {
     background-color: $color-nobel;
     color: $color-default-white;
   }
 
+  &.swiper-button-disabled {
+    background-color: $color-nobel;
+    color: $color-default-white;
+  }
 }
