@@ -42,4 +42,19 @@
     background-color: $color-nobel;
     color: $color-default-white;
   }
+
+  &--navigation {
+    width: 37px;
+    height: 35px;
+    padding: 10px;
+  }
+
+  &--navigation svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  &--navigation:nth-child(2) svg {
+    transform: rotate(180deg);
+  }
 }

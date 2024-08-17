@@ -15,6 +15,10 @@
   }
 }
 
+.slider-tours .swiper-slide {
+  height: auto;
+}
+
 .slider-tours__list {
   list-style: none;
   margin: 0;
@@ -40,10 +44,11 @@
 
 .slider-tours__background {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-elephant;
   z-index: -1;
 }
 

@@ -234,13 +234,13 @@
           <div class="tours__wrapper">
             <h2 data-titel-tag="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__navigation container">
-              <div class="tours__navigation-prev tours__navigation-button btn" tabindex="0">
+              <div class="tours__navigation-prev btn btn--navigation" tabindex="0">
                 <svg width="13" height="13" viewBox="0 0 13 13" role="img">
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
                 <span class="visually-hidden">Кнопка переключения слайдов, назад.</span>
               </div>
-              <div class="tours__navigation-next tours__navigation-button btn" tabindex="0">
+              <div class="tours__navigation-next btn btn--navigation" tabindex="0">
                 <svg width="13" height="13" viewBox="0 0 13 13" role="img">
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
@@ -491,12 +491,6 @@
             </a>
             <div class="tours__background">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="141" height="595"
-                  srcset="./img/conten/tours/clouds-mobile@1x.webp 1x, ./img/conten/tours/clouds-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1439px)" width="425" height="1630"
-                  srcset="./img/conten/tours/clouds-tablet@1x.webp 1x, ./img/conten/tours/clouds-tablet@2x.webp 2x">
-                <source type="image/webp" width="602" height="1630"
-                  srcset="./img/conten/tours/clouds-desktop@1x.webp 1x, ./img/conten/tours/clouds-desktop@2x.webp 2x">
                 <source type="image/png" media="(max-width: 767px)" width="141" height="595"
                   srcset="./img/conten/tours/clouds-mobile@1x.png 1x, ./img/conten/tours/clouds-mobile@2x.png 2x">
                 <source type="image/png" media="(max-width: 1439px)" width="425" height="1630"
@@ -518,13 +512,13 @@
             </div>
             <h3>Наши инструкторы</h3>
             <div class="training__navigation container">
-              <div class="training__navigation-prev training__navigation-button btn" tabindex="0">
+              <div class="training__navigation-prev btn btn--navigation" tabindex="0">
                 <svg width="13" height="13" viewBox="0 0 13 13" role="img">
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
                 <span class="visually-hidden">Кнопка переключения слайдов, назад.</span>
               </div>
-              <div class="training__navigation-next training__navigation-button btn" tabindex="0">
+              <div class="training__navigation-next btn btn--navigation" tabindex="0">
                 <svg width="13" height="13" viewBox="0 0 13 13" role="img">
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
@@ -532,24 +526,154 @@
               </div>
             </div>
             <div class="slider-training swiper">
-              <ul class="slider-training__list">
+              <ul class="slider-training__list swiper-wrapper">
                 <li class="slider-training__item swiper-slide">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" width="260" height="200" srcset="./img/conten/training/photo-1-training-mobile@1x.webp 1x, ./img/conten/training/photo-1-training-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1439px)" width="183" height="200" srcset="./img/conten/training/photo-1-training-tablet@1x.webp 1x, ./img/conten/training/photo-1-training-tablet@2x.webp 2x">
-                    <source type="image/webp" width="255" height="200" srcset="./img/conten/training/photo-1-training-desktop@1x.webp 1x, ./img/conten/training/photo-1-training-desktop@1x.webp 2x">
-                    <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200" srcset="./img/conten/training/photo-1-training-mobile@1x.jpg 1x, ./img/conten/training/photo-1-training-mobile@2x.jpg 2x">
-                    <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200" srcset="./img/conten/training/photo-1-training-tablet@1x.jpg 1x, ./img/conten/training/photo-1-training-tablet@2x.jpg 2x">
-                    <img src="./img/conten/training/photo-1-training-desktop@1x.jpg" width="255" height="200" srcset="./img/conten/training/photo-1-training-desktop@2x.jpg 2x" alt="Изображение инструктора.">
-                  </picture>
-                  <p>Александр
-                    Прокофьев</p>
+                  <div class="slider-training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-1-training-mobile@1x.webp 1x, ./img/conten/training/photo-1-training-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-1-training-tablet@1x.webp 1x, ./img/conten/training/photo-1-training-tablet@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200"
+                        srcset="./img/conten/training/photo-1-training-desktop@1x.webp 1x, ./img/conten/training/photo-1-training-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-1-training-mobile@1x.jpg 1x, ./img/conten/training/photo-1-training-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-1-training-tablet@1x.jpg 1x, ./img/conten/training/photo-1-training-tablet@2x.jpg 2x">
+                      <img src="./img/conten/training/photo-1-training-desktop@1x.jpg" width="255" height="200"
+                        srcset="./img/conten/training/photo-1-training-desktop@2x.jpg 2x"
+                        alt="Изображение инструктора.">
+                    </picture>
+                  </div>
+                  <div class="slider-training__contact">
+                    <p>Александр
+                      Прокофьев</p>
+                    <a class="slider-training__link" href="#">
+                      <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
                   <span>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</span>
-                  <a class="slider-training__link" href="#">
-                    <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
+                </li>
+                <li class="slider-training__item swiper-slide">
+                  <div class="slider-training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-2-training-mobile@1x.webp 1x, ./img/conten/training/photo-2-training-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-2-training-tablet@1x.webp 1x, ./img/conten/training/photo-2-training-tablet@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200"
+                        srcset="./img/conten/training/photo-2-training-desktop@1x.webp 1x, ./img/conten/training/photo-2-training-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-2-training-mobile@1x.jpg 1x, ./img/conten/training/photo-2-training-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-2-training-tablet@1x.jpg 1x, ./img/conten/training/photo-2-training-tablet@2x.jpg 2x">
+                      <img src="./img/conten/training/photo-2-training-desktop@1x.jpg" width="255" height="200"
+                        srcset="./img/conten/training/photo-2-training-desktop@2x.jpg 2x"
+                        alt="Изображение инструктора.">
+                    </picture>
+                  </div>
+                  <div class="slider-training__contact">
+                    <p>Светлана
+                      Афиногенова</p>
+                    <a class="slider-training__link" href="#">
+                      <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <span>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе,
+                    чувствовать — в этом назначение жизни.</span>
+                </li>
+                <li class="slider-training__item swiper-slide">
+                  <div class="slider-training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-3-training-mobile@1x.webp 1x, ./img/conten/training/photo-3-training-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-3-training-tablet@1x.webp 1x, ./img/conten/training/photo-3-training-tablet@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200"
+                        srcset="./img/conten/training/photo-3-training-desktop@1x.webp 1x, ./img/conten/training/photo-3-training-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-3-training-mobile@1x.jpg 1x, ./img/conten/training/photo-3-training-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-3-training-tablet@1x.jpg 1x, ./img/conten/training/photo-3-training-tablet@2x.jpg 2x">
+                      <img src="./img/conten/training/photo-3-training-desktop@1x.jpg" width="255" height="200"
+                        srcset="./img/conten/training/photo-3-training-desktop@2x.jpg 2x"
+                        alt="Изображение инструктора.">
+                    </picture>
+                  </div>
+                  <div class="slider-training__contact">
+                    <p>Надежда
+                      Колесниченко</p>
+                    <a class="slider-training__link" href="#">
+                      <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <span>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь
+                    себя спокойно и уверенно.</span>
+                </li>
+                <li class="slider-training__item swiper-slide">
+                  <div class="slider-training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-4-training-mobile@1x.webp 1x, ./img/conten/training/photo-4-training-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-4-training-tablet@1x.webp 1x, ./img/conten/training/photo-4-training-tablet@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200"
+                        srcset="./img/conten/training/photo-4-training-desktop@1x.webp 1x, ./img/conten/training/photo-4-training-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-4-training-mobile@1x.jpg 1x, ./img/conten/training/photo-4-training-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-4-training-tablet@1x.jpg 1x, ./img/conten/training/photo-4-training-tablet@2x.jpg 2x">
+                      <img src="./img/conten/training/photo-4-training-desktop@1x.jpg" width="255" height="200"
+                        srcset="./img/conten/training/photo-4-training-desktop@2x.jpg 2x"
+                        alt="Изображение инструктора.">
+                    </picture>
+                  </div>
+                  <div class="slider-training__contact">
+                    <p>Федор
+                      Кайгородов</p>
+                    <a class="slider-training__link" href="#">
+                      <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <span>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                    путешествует по Европе.</span>
+                </li>
+                <li class="slider-training__item swiper-slide">
+                  <div class="slider-training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-5-training-mobile@1x.webp 1x, ./img/conten/training/photo-5-training-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-5-training-tablet@1x.webp 1x, ./img/conten/training/photo-5-training-tablet@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200"
+                        srcset="./img/conten/training/photo-5-training-desktop@1x.webp 1x, ./img/conten/training/photo-5-training-desktop@1x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="260" height="200"
+                        srcset="./img/conten/training/photo-5-training-mobile@1x.jpg 1x, ./img/conten/training/photo-5-training-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="183" height="200"
+                        srcset="./img/conten/training/photo-5-training-tablet@1x.jpg 1x, ./img/conten/training/photo-5-training-tablet@2x.jpg 2x">
+                      <img src="./img/conten/training/photo-5-training-desktop@1x.jpg" width="255" height="200"
+                        srcset="./img/conten/training/photo-5-training-desktop@2x.jpg 2x"
+                        alt="Изображение инструктора.">
+                    </picture>
+                  </div>
+                  <div class="slider-training__contact">
+                    <p>Даниэль
+                      Васнецов</p>
+                    <a class="slider-training__link" href="#">
+                      <svg width="14" height="8" veiwBox="0 0 14 8" role="img">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <span>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</span>
                 </li>
               </ul>
             </div>
@@ -557,31 +681,39 @@
               <h4>Процесс обучения</h4>
               <ul class="training__descriptions-list">
                 <li class="training__descriptions-item">
-                  <svg>
-                    <use href="/__spritemap#sprite-"></use>
+                  <svg width="24" height="25" veiwBox="0 0 24 25" role="img">
+                    <use href="/__spritemap#sprite-training-pin"></use>
                   </svg>
                   <p>Изучение спортивного
                     туристского движения</p>
                 </li>
                 <li class="training__descriptions-item">
-                  <svg>
-                    <use href="/__spritemap#sprite-"></use>
+                  <svg width="25" height="21" veiwBox="0 0 25 21" role="img">
+                    <use href="/__spritemap#sprite-boots"></use>
                   </svg>
                   <p>Подготовка и техническое снаряжение в походах</p>
                 </li>
                 <li class="training__descriptions-item">
-                  <svg>
-                    <use href="/__spritemap#sprite-"></use>
+                  <svg width="24" height="25" veiwBox="0 0 24 25" role="img">
+                    <use href="/__spritemap#sprite-pin-tree"></use>
                   </svg>
                   <p>Лекции по окружающей среде, экологии и гигиене</p>
                 </li>
                 <li class="training__descriptions-item">
-                  <svg>
-                    <use href="/__spritemap#sprite-"></use>
+                  <svg width="25" height="25" veiwBox="0 0 25 25" role="img">
+                    <use href="/__spritemap#sprite-mountain"></use>
                   </svg>
                   <p>Разъяснение сложности горных препятствий</p>
                 </li>
               </ul>
+            </div>
+            <div class="training__background">
+              <picture>
+                <source type="image/png" media="(max-width: 1439px)" width="840" height="280"
+                  srcset="./img/conten/training/clouds-2-tablet@1x.png 1x, ./img/conten/training/clouds-tablet@2x.png 2x">
+                <img src="./img/conten/training/clouds-2-desktop@1x.png" width="840" height="280"
+                  srcset="./img/conten/training/clouds-2-desktop@2x.png 2x" alt="">
+              </picture>
             </div>
           </div>
         </div>
