@@ -17,14 +17,17 @@ const mySwiper = () => {
     },
     breakpoints: {
       320: {
+        initialSlide: 2,
         slidesPerView: 1,
         spaceBetween: 0,
       },
       768: {
+        initialSlide: 0,
         slidesPerView: 3,
         spaceBetween: 20,
       },
       1440: {
+        initialSlide: 0,
         slidesPerView: 4,
         spaceBetween: 20,
         allowTouchMove: false,

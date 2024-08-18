@@ -1,10 +1,5 @@
-.training {}
-
 .training .swiper-slide {
   height: auto;
-}
-
-.training .container {
 }
 
 .training__wrapper {
@@ -13,6 +8,10 @@
   position: relative;
   padding-top: 49px;
   text-align: start;
+
+  @include vp-767 {
+    padding-top: 27px;
+  }
 }
 
 .training__wrapper h3 {
@@ -23,11 +22,13 @@
   line-height: 35px;
 
   @include vp-1440 {
+    margin-bottom: 37px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-767 {
+    margin-bottom: 22px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -39,6 +40,15 @@
   margin-right: 324px;
   margin-bottom: 62px;
   text-align: start;
+
+  @include vp-1440 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .training__titel h2 {
@@ -50,13 +60,27 @@
   line-height: 35px;
 
   @include vp-1440 {
+    margin-bottom: 34px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-767 {
+    margin-bottom: 33px;
     font-size: 22px;
     line-height: 22px;
+  }
+}
+
+.training__titel br {
+  display: none;
+
+  @include vp-1440 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -86,7 +110,6 @@
 
 .training__titel p {
   margin: 0;
-  font-weight: 400;
 
   @include vp-767 {
     font-size: 14px;
@@ -104,12 +127,27 @@
   max-width: 320px;
   justify-content: end;
   gap: 4px;
+
+  @include vp-1440 {
+    top: 207px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
-.training__navigation .container {}
-
 .training__descriptions {
+  position: relative;
   margin-top: 58px;
+
+  @include vp-1440 {
+    margin-top: 27px;
+  }
+
+  @include vp-767 {
+    margin-top: 26px;
+  }
 }
 
 .training__descriptions h4 {
@@ -120,11 +158,14 @@
   line-height: 21px;
 
   @include vp-1440 {
+    margin-bottom: 100px;
     font-size: 18px;
     line-height: 18px;
   }
 
   @include vp-767 {
+    margin-bottom: 23px;
+    font-size: 16px;
     line-height: 16px;
   }
 }
@@ -139,16 +180,23 @@
   padding: 0;
   gap: 12px;
   list-style: none;
-}
 
-.training__descriptions-list::before {
-  position: absolute;
-  bottom: -10px;
-  left: 10px;
-  width: calc(100% - 10px);
-  height: 2px;
-  background: $color-navy-blue;
-  content: "";
+  @include vp-1440 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map mountain"
+      "boots tree";
+    margin-left: -1px;
+    gap: 134px;
+    row-gap: 104px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    margin-left: 26px;
+    gap: 0;
+    row-gap: 25px;
+  }
 }
 
 .training__descriptions-item {
@@ -158,20 +206,133 @@
   gap: 10px;
 }
 
+.training__descriptions-item svg {
+  width: 46px;
+  height: 29px;
+
+  @include vp-767 {
+    width: 42px;
+    height: 26px;
+  }
+}
+
+.descriptions-item--map {
+  @include vp-1440 {
+    grid-area: map;
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    gap: 7px;
+  }
+}
+
+.descriptions-item--boots {
+  @include vp-1440 {
+    grid-area: boots;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.descriptions-item--boots svg {
+  @include vp-767 {
+    width: 45px;
+    height: 25px;
+  }
+}
+
+.descriptions-item--tree {
+  @include vp-1440 {
+    grid-area: tree;
+  }
+
+  @include vp-767 {
+    gap: 7px;
+  }
+}
+
+.descriptions-item--tree svg {
+  @include vp-767 {
+    width: 50px;
+    height: 26px;
+  }
+}
+
+.descriptions-item--mountain {
+  @include vp-1440 {
+    grid-area: mountain;
+    gap: 8px;
+  }
+}
+
+.descriptions-item--mountain svg {
+  width: 44px;
+  height: 29px;
+
+  @include vp-767 {
+    width: 44px;
+    height: 26px;
+  }
+}
+
+.training__descriptions-item::before {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: calc(100% + 12px);
+  height: 2px;
+  background: $color-navy-blue;
+  content: "";
+
+  @include vp-1440 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+    top: 14px;
+    left: -20px;
+    width: 2px;
+    height: calc(100% - 25px);
+  }
+}
+
 .training__descriptions-item::after {
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   left: 10px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: $color-navy-blue;
   content: "";
+
+  @include vp-1440 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+    top: 12px;
+    left: -26px;
+  }
 }
 
-.training__descriptions-item svg {
-  width: 46px;
-  height: 29px;
+
+.training__descriptions-item:last-child::after {
+  left: 8px;
+}
+
+.training__descriptions-item:nth-child(4n)::before {
+  width: calc(100% + 176px);
+}
+
+
+.training__descriptions-item:nth-child(3)::after {
+  left: -11px;
 }
 
 .training__descriptions-item p {
@@ -186,12 +347,34 @@
   }
 
   @include vp-767 {
+    margin-right: 7px;
     font-size: 12px;
     line-height: 18px;
   }
 }
 
 
-.training__background {
+.training__clouds-background {
   position: absolute;
+  bottom: -68px;
+  right: -120px;
+  z-index: -1;
+
+  @include vp-1440 {
+    bottom: 116px;
+    right: -45px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.training__clouds-background img {
+  width: 634px;
+  height: 270px;
+
+  @include vp-1440 {
+    width: 464px;
+  }
 }

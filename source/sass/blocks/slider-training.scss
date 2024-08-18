@@ -68,10 +68,38 @@
   display: flex;
   position: absolute;
   top: -1px;
-  right: -1px;
-  padding: 7px 5px;
-  padding-left: 4px;
+  right: 0;
+  padding: 7px 4px;
   border: 1px solid $color-elephant-30;
+
+
+  &:hover:not([disabled]) {
+    border: 1px solid $color-elephant;
+  }
+
+  &:focus:not([disabled]) {
+    border: 1px solid $color-default-white;
+    outline: none;
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-navy-blue;
+    border: 1px solid $color-navy-blue;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  &[disabled] {
+    border: 1px solid $color-elephant-30;
+    pointer-events: none;
+    cursor: default;
+
+    svg {
+      color: $color-elephant-30;
+    }
+  }
 }
 
 .slider-training__link svg {
