@@ -731,12 +731,18 @@
           <div class="about__wrapper">
             <div class="about__image">
               <picture>
-                <source type="image/webp" media="(max-width: 767px)" width="434" height="400" srcset="./img/conten/about/photo-about-mobile@1x.webp 1x, ./img/conten/about/photo-about-mobile@1x.webp 2x">
-                <source type="image/webp" media="(max-width: 1439px)" width="542" height="350" srcset="./img/conten/about/photo-about-tablet@1x.webp 1x, ./img/conten/about/photo-about-tablet@1x.webp 2x">
-                <source type="image/webp" width="660" height="498" srcset="./img/conten/about/photo-about-desktop@1x.webp 1x, ./img/conten/about/photo-about-desktop@1x.webp">
-                <source type="image/jpeg" media="(max-width: 767px)" width="434" height="400" srcset="./img/conten/about/photo-about-mobile@1x.jpeg 1x, ./img/conten/about/photo-about-mobile@2x.jpeg 2x">
-                <source type="image/jpeg" media="(max-width: 1439px)" width="542" height="350" srcset="./img/conten/about/photo-about-tablet@1x.jpeg 1, ./img/conten/about/photo-about-tablet@2x.jpeg 2x">
-                <img src="./img/conten/about/photo-about-desktop@1x.jpeg" width="660" height="498" srcset="./img/conten/about/photo-about-desktop@2x.jpeg 2x" alt="Изображение туристов.">
+                <source type="image/webp" media="(max-width: 767px)" width="434" height="400"
+                  srcset="./img/conten/about/photo-about-mobile@1x.webp 1x, ./img/conten/about/photo-about-mobile@1x.webp 2x">
+                <source type="image/webp" media="(max-width: 1439px)" width="542" height="350"
+                  srcset="./img/conten/about/photo-about-tablet@1x.webp 1x, ./img/conten/about/photo-about-tablet@1x.webp 2x">
+                <source type="image/webp" width="660" height="498"
+                  srcset="./img/conten/about/photo-about-desktop@1x.webp 1x, ./img/conten/about/photo-about-desktop@1x.webp">
+                <source type="image/jpeg" media="(max-width: 767px)" width="434" height="400"
+                  srcset="./img/conten/about/photo-about-mobile@1x.jpeg 1x, ./img/conten/about/photo-about-mobile@2x.jpeg 2x">
+                <source type="image/jpeg" media="(max-width: 1439px)" width="542" height="350"
+                  srcset="./img/conten/about/photo-about-tablet@1x.jpeg 1, ./img/conten/about/photo-about-tablet@2x.jpeg 2x">
+                <img src="./img/conten/about/photo-about-desktop@1x.jpeg" width="660" height="498"
+                  srcset="./img/conten/about/photo-about-desktop@2x.jpeg 2x" alt="Изображение туристов.">
               </picture>
             </div>
             <div class="about__description">
@@ -753,6 +759,57 @@
                   При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться
                   незабываемым приключением в приятной компании.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" data-test="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+            <h2 data-titel-tag="Отзывы">Отзывы</h2>
+            <div class="reviews__navigation container">
+              <div class="reviews__navigation-prev btn btn--navigation" tabindex="0">
+                <svg width="13" height="13" viewBox="0 0 13 13" role="img">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Кнопка переключения слайдов, назад.</span>
+              </div>
+              <div class="reviews__navigation-next btn btn--navigation" tabindex="0">
+                <svg width="13" height="13" viewBox="0 0 13 13" role="img">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Кнопка переключения слайдов, вперед.</span>
+              </div>
+            </div>
+            <div class="slider-reviews swiper">
+              <ul class="slider-reviews__list swiper-wrapper">
+                <li class="slider-reviews__item swiper-slide">
+                  <div class="slider-reviews__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="" height="" srcset="">
+                      <source type="image/webp" media="(max-width: 1439px)" width="" height="" srcset="">
+                      <source type="image/webp" width="" height="" srcset="">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="" height="" srcset="">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="" height="" srcset="">
+                      <img src="" width="" height="" srcset="" alt="Фотография туриста.">
+                    </picture>
+                  </div>
+                  <div class="slider-reviews__comment">
+                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие
+                      эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
+                      С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                      так душой и телом. Всем очень рекомендую!</p>
+                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие
+                      эксперты, всему научили, все показали. Делились историями о местах, людях, культуре места.
+                      С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал
+                      так душой и телом. Всем очень рекомендую!</p>
+                    <div class="slider-reviews__comment-person">
+                      <h3>Фролов Александр</h3>
+                      <p>38 лет, Москва</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
