@@ -8,6 +8,7 @@ import {initBurgerMenu} from './nav-menu/burger-menu';
 import {initHeroSwiper} from './swiper-slider/swiper-hero';
 import {initToursSwiper} from './swiper-slider/swiper-tours';
 import {initTrainingSwiper} from './swiper-slider/swiper-training';
+import {initReviewsSwiper} from './swiper-slider/swiper-reviews';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,5 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initHeroSwiper();
     initToursSwiper();
     initTrainingSwiper();
+    initReviewsSwiper();
   });
 });

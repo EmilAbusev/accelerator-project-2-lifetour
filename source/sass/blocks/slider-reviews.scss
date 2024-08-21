@@ -1,42 +1,108 @@
 .slider-reviews {
   max-width: 1320px;
   width: 100%;
+
+  @include vp-1440 {
+    max-width: 1160px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
 }
 
 .slider-reviews__list {
   list-style: none;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
+
+  @include vp-1440 {
+    margin-left: -1px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
 }
 
 .slider-reviews__list .swiper-slide {
   display: grid;
   grid-template-columns: 257px 1fr;
-  padding: 20px 20px;
-  padding-top: 18px;
+  padding: 13px 20px;
+  padding-top: 17px;
+  height: auto;
   gap: 30px;
+
+  @include vp-1440 {
+    padding-top: 20px;
+    padding-bottom: 6px;
+    grid-template-columns: 186px 1fr;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 11px;
+    padding-top: 16px;
+    padding-right: 27px;
+    gap: 0;
+  }
 }
 
 .slider-reviews__item {
   max-width: 700px;
-  min-height: 293px;
+  min-height: 290px;
   border: 1px solid $color-resolution-blue-10;
-  box-shadow: 0 0 25px 5px $color-resolution-blue-10;
+  box-shadow: 0 0 20px 0 $color-resolution-blue-10;
   background-color: $color-default-white;
+
+  @include vp-1440 {
+    max-width: 565px;
+    min-height: 277px;
+    box-shadow: 0 0 30px 0 $color-resolution-blue-10;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    min-height: 482px;
+    box-shadow: 0 0 20px 0 $color-resolution-blue-10;
+  }
 }
 
+
 .slider-reviews__image {
-  max-width: 257px;
-  max-height: 254px;
+  margin-top: 2px;
+  width: 100%;
+  min-height: 254px;
+
+  @include vp-1440 {
+    margin: 0;
+    min-height: 237px;
+  }
+
+  @include vp-767 {
+    min-height: 169px;
+  }
 }
 
 .slider-reviews__image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
-.slider-reviews__comment {}
+.slider-reviews__comment {
+  margin-right: 20px;
+
+  @include vp-1440 {
+    margin-top: 3px;
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 12px;
+  }
+}
 
 .slider-reviews__comment p {
   margin: 0;
@@ -51,13 +117,29 @@
 
 .slider-reviews__comment p+p {
   margin: 0;
-  margin-top: 9px;
+  margin-top: 10px;
+
+  @include vp-1440 {
+    margin-top: 11px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+  }
 }
 
 .slider-reviews__comment-person {
   display: flex;
   flex-direction: column;
   margin-top: 4px;
+
+  @include vp-1440 {
+    margin-top: 25px;
+  }
+
+  @include vp-767 {
+    margin-top: 16px;
+  }
 }
 
 .slider-reviews__comment-person h3 {
@@ -66,8 +148,7 @@
   font-size: 13px;
   line-height: 13px;
 
-  @include vp-1440 {
-  }
+  @include vp-1440 {}
 
   @include vp-767 {
     font-size: 12px;
@@ -81,4 +162,12 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
+
+  @include vp-1440 {
+    margin-top: 6px;
+  }
+
+  @include vp-767 {
+    margin-top: 8px;
+  }
 }
