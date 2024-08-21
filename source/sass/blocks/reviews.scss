@@ -1,5 +1,9 @@
 .reviews .container {
   padding-right: 0;
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .reviews__wrapper {
@@ -22,6 +26,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 38px;
+  max-width: 550px;
   font-weight: 800;
   font-size: 35px;
   line-height: 35px;
@@ -33,6 +38,7 @@
   }
 
   @include vp-767 {
+    max-width: 290px;
     font-size: 22px;
     line-height: 22px;
   }
