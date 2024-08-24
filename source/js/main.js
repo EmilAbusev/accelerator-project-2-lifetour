@@ -9,6 +9,7 @@ import {initHeroSwiper} from './swiper-slider/swiper-hero';
 import {initToursSwiper} from './swiper-slider/swiper-tours';
 import {initTrainingSwiper} from './swiper-slider/swiper-training';
 import {initReviewsSwiper} from './swiper-slider/swiper-reviews';
+import {desktopAdvantagesSwiper} from './swiper-slider/swiper-advantages';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,5 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSwiper();
     initTrainingSwiper();
     initReviewsSwiper();
+    desktopAdvantagesSwiper();
   });
 });
