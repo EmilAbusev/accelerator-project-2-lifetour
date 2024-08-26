@@ -1,0 +1,50 @@
+.slider-gallery {
+  max-width: 1440px;
+  width: 100%;
+
+  @include vp-1440 {
+    max-width: 768px;
+  }
+
+  @include vp-767 {
+    max-width: 320px;
+  }
+}
+
+.slider-gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-gallery__item {
+  max-width: 284px;
+  height: auto;
+  width: 100%;
+
+  @include vp-1440 {
+    max-width: 253px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    max-width: 158px;
+    width: 100%;
+  }
+}
+
+.slider-gallery__item img {
+  object-fit: cover;
+}
+
+.slider-gallery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.slider-gallery__item-wrapper img {
+  object-fit: cover;
+}
+
+.slider-gallery__item-wrapper img+img {}

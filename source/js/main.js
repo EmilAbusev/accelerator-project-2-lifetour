@@ -10,6 +10,7 @@ import {initToursSwiper} from './swiper-slider/swiper-tours';
 import {initTrainingSwiper} from './swiper-slider/swiper-training';
 import {initReviewsSwiper} from './swiper-slider/swiper-reviews';
 import {desktopAdvantagesSwiper} from './swiper-slider/swiper-advantages';
+import {initGallerySwiper} from './swiper-slider/swiper-gallery';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,5 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initTrainingSwiper();
     initReviewsSwiper();
     desktopAdvantagesSwiper();
+    initGallerySwiper();
   });
 });
