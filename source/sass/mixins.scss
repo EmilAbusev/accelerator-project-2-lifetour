@@ -11,8 +11,8 @@
     }
   }
 
-  &.focus-visible:focus,
-  &:focus-visible {
+  .focus-visible:focus,
+  :focus-visible {
     @content;
   }
 }
@@ -26,8 +26,8 @@
 }
 
 @mixin focus {
-  &.focus-visible:focus,
-  &:focus-visible {
+  .focus-visible:focus,
+  :focus-visible {
     @content;
   }
 }

@@ -10,7 +10,6 @@
 
 .slider-hero__slide .container {
   margin: 0 auto;
-  padding: 0;
   padding: 0 70px;
 
   @include vp-1440 {
@@ -41,7 +40,6 @@
 }
 
 .slider-hero__content-tablet {
-
   @include vp-1440 {
     padding-top: 135px;
     padding-bottom: 610px;

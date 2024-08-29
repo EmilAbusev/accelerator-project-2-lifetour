@@ -1,13 +1,22 @@
-.form {}
-
 .form .container {
   padding: 0;
 }
 
 .form__wrapper {
   position: relative;
-  padding: 271px 200px;
-  padding-bottom: 358px;
+  padding: 299px 239px;
+  padding-bottom: 291px;
+
+  @include vp-1440 {
+    padding: 190px 203px;
+    padding-left: 204px;
+    padding-bottom: 184px;
+  }
+
+  @include vp-767 {
+    padding: 180px 30px;
+    padding-bottom: 174px;
+  }
 }
 
 .form__title {
@@ -18,16 +27,19 @@
 
 .form__title h2 {
   margin: 0;
+  margin-bottom: 17px;
   font-weight: 800;
   font-size: 35px;
   line-height: 35px;
 
   @include vp-1440 {
+    margin-bottom: 23px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-767 {
+    margin-bottom: 17px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -35,15 +47,66 @@
 
 .form__title p {
   margin: 0;
+  margin-bottom: 39px;
 
-  @include vp-1440 {}
+  @include vp-1440 {
+    margin-bottom: 23px;
+  }
 
   @include vp-767 {
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 18px;
   }
 }
 
+.form__title p br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+
+.form__body {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+
+  @include vp-1440 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    gap: 6px;
+  }
+}
+
+.form__item input {
+  padding: 18px 128px 17px 30px;
+
+  @include vp-1440 {
+    padding: 19px 129px 16px 28px;
+  }
+
+  @include vp-767 {
+    padding: 15px 42px 14px 14px;
+  }
+}
+
+.form__button {
+  @include vp-1440 {
+    width: 361px;
+  }
+
+  @include vp-767 {
+    padding: 23px 20px;
+    padding-bottom: 20px;
+    width: 259px;
+  }
+}
 
 
 .form__background {

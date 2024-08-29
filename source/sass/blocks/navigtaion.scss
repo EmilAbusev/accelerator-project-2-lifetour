@@ -27,8 +27,8 @@
     grid-template-rows: 42px auto auto;
     grid-template-areas:
       "button logo"
-      "phone phone"
-      "list list";
+      "phone  phone"
+      "list   list";
   }
 }
 
@@ -62,18 +62,6 @@
     }
   }
 
-  svg {
-    color: $color-default-white;
-  }
-
-  svg+svg {
-    display: none;
-  }
-}
-
-
-.navigation__button svg {
-
   &:hover:not([disabled]) {
     opacity: 50%;
   }
@@ -86,6 +74,14 @@
     color: $color-nobel;
     cursor: default;
     pointer-events: none;
+  }
+
+  svg {
+    color: $color-default-white;
+  }
+
+  svg + svg {
+    display: none;
   }
 }
 
@@ -165,7 +161,6 @@
     padding-bottom: 34px;
     gap: 2px;
     grid-area: list;
-
   }
 }
 

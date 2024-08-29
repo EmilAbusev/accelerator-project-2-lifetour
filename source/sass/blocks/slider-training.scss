@@ -95,10 +95,10 @@
     border: 1px solid $color-elephant-30;
     pointer-events: none;
     cursor: default;
+  }
 
-    svg {
-      color: $color-elephant-30;
-    }
+  &[disabled] svg {
+    color: $color-elephant-30;
   }
 }
 

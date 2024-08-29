@@ -188,7 +188,8 @@
   @include vp-1440 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "map mountain"
+    grid-template-areas:
+      "map   mountain"
       "boots tree";
     margin-left: -1px;
     gap: 134px;

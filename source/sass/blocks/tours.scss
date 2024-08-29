@@ -160,14 +160,14 @@
   &[disabled] {
     cursor: default;
     pointer-events: none;
+  }
 
-    p {
-      color: $color-nobel;
-    }
+  &[disabled] p {
+    color: $color-nobel;
+  }
 
-    svg {
-      stroke: $color-nobel;
-    }
+  &[disabled] svg {
+    stroke: $color-nobel;
   }
 }
 

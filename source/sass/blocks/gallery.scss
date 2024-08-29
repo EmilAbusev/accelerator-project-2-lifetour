@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding-top: 7px 0;
+    padding-top: 7px;
   }
 }
 
@@ -117,8 +117,8 @@
 
   @include vp-1440 {
     display: flex;
-    flex-wrap: wrap ;
-    justify-content: end  ;
+    flex-wrap: wrap;
+    justify-content: end;
     top: 136px;
     right: 45px;
     max-width: 150px;
