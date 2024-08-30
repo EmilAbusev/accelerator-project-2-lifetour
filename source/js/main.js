@@ -1,8 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
-
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initBurgerMenu} from './nav-menu/burger-menu';
 import {initHeroSwiper} from './swiper-slider/swiper-hero';
@@ -11,6 +6,7 @@ import {initTrainingSwiper} from './swiper-slider/swiper-training';
 import {initReviewsSwiper} from './swiper-slider/swiper-reviews';
 import {desktopAdvantagesSwiper} from './swiper-slider/swiper-advantages';
 import {initGallerySwiper} from './swiper-slider/swiper-gallery';
+import './modules/form';
 
 
 window.addEventListener('DOMContentLoaded', () => {

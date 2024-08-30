@@ -116,6 +116,11 @@
   }
 }
 
+
+.form__item input.error {
+  border: 1px solid $color-torch-red;
+}
+
 .form__button {
   @include vp-1440 {
     width: 361px;
