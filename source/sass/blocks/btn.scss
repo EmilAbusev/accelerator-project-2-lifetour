@@ -38,7 +38,7 @@
     color: $color-default-white;
   }
 
-  .swiper-button-disabled {
+  &--navigation.swiper-button-disabled {
     background-color: $color-nobel;
     color: $color-default-white;
   }

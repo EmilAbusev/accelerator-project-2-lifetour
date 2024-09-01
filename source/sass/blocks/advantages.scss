@@ -11,15 +11,16 @@
 }
 
 .advantages__wrapper {
-  padding-top: 121px;
+  position: relative;
+  padding-top: 135px;
   text-align: center;
 
   @include vp-1440 {
-    padding-top: 51px;
+    padding-top: 61px;
   }
 
   @include vp-767 {
-    padding-top: 6px;
+    padding-top: 36px;
   }
 }
 
@@ -32,12 +33,15 @@
   line-height: 35px;
 
   @include vp-1440 {
+    max-width: 640px;
+    margin: 0 auto;
     margin-bottom: 60px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @include vp-767 {
+    max-width: 280px;
     margin-bottom: 36px;
     font-size: 22px;
     line-height: 22px;
@@ -70,6 +74,7 @@
   }
 }
 
+
 .advantages__navigation {
   display: flex;
   margin: 0 auto;
@@ -80,4 +85,27 @@
   @include vp-1440 {
     display: none;
   }
+}
+
+
+.advantages__clouds-background {
+  display: none;
+
+  @include vp-1440 {
+    display: block;
+    position: absolute;
+    top: 170px;
+    left: 45px;
+    max-width: 768px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.advantages__clouds-background img {
+  width: 100%;
+  height: 100%;
 }

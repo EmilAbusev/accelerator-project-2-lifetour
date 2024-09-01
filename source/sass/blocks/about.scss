@@ -9,19 +9,19 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 124px;
+  padding-top: 100px;
   padding-bottom: 100px;
 
   @include vp-1440 {
     grid-template-columns: 450px 1fr;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 70px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    padding-top: 1px;
+    padding-top: 20px;
     padding-bottom: 43px;
   }
 }

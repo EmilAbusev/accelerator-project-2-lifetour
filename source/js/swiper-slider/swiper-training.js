@@ -15,6 +15,9 @@ const mySwiper = () => {
       nextEl: swiperButtonNext,
       prevEl: swiperButtonPrev,
     },
+
+    speed: 500,
+
     breakpoints: {
       320: {
         initialSlide: 2,
@@ -30,7 +33,7 @@ const mySwiper = () => {
         initialSlide: 0,
         slidesPerView: 4,
         spaceBetween: 20,
-        allowTouchMove: false,
+        allowTouchMove: true,
       },
     },
   });

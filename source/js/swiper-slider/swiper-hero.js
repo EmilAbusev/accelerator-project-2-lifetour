@@ -15,10 +15,12 @@ const mySwiper = () => {
       clickable: true,
       type: 'bullets',
     },
+
     slidesPerGroup: 1,
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
+    speed: 500,
 
     breakpoints: {
       1440: {

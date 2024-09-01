@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,13 +17,28 @@ const desktopAdvantagesSwiper = () => {
         nextEl: swiperButtonNext,
         prevEl: swiperButtonPrev,
       },
+
+      loop: true,
+      autoHeight: false,
+      speed: 500,
       centeredSlides: true,
+      watchOverflow: true,
+
       breakpoints: {
+        320: {
+          slidesPerGroup: 0,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerGroup: 0,
+          spaceBetween: 0,
+        },
         1440: {
-          slidesPerView: 3.585,
+          slidesPerView: 'auto',
           spaceBetween: 30,
           initialSlide: 2,
           slidesPerGroup: 2,
+          allowTouchMove: true,
         },
       },
     });

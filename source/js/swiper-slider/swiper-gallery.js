@@ -17,16 +17,27 @@ const initGallerySwiper = () => {
         nextEl: swiperButtonNext,
         prevEl: swiperButtonPrev,
       },
+
+      speed: 500,
+      loop: true,
+      watchOverflow: true,
+
       breakpoints: {
         320: {
           slidesPerView: 2,
-          spaceBetween: 5,
+          spaceBetween: 6,
           initialSlide: 0,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 3,
           spaceBetween: 5,
           initialSlide: 0,
+          slidesPerGroup: 1,
+        },
+        1439: {
+          slidesPerGroup: 0,
+          spaceBetween: 0,
         },
       },
     });

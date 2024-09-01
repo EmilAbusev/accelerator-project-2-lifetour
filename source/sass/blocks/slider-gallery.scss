@@ -4,6 +4,7 @@
 
   @include vp-1440 {
     max-width: 768px;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -35,7 +36,7 @@
 
   @include vp-767 {
     max-width: 158px;
-    max-height: 266px;
+    max-height: 270px;
   }
 }
 
@@ -43,15 +44,40 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  @include vp-767 {
+    width: auto;
+  }
 }
 
 .slider-gallery__item-wrapper {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  gap: 6px;
+
+  @include vp-1440 {
+    gap: 5px;
+  }
+
+  @include vp-767 {
+    max-height: 267px;
+    gap: 6px;
+  }
 }
 
-.slider-gallery__item-wrapper img {
+
+.slider-gallery__item-image {
   width: 100%;
+
+  @include vp-767 {
+    height: 135px;
+  }
+}
+
+
+.slider-gallery__item-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
