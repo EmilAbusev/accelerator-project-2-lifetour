@@ -8,13 +8,8 @@ form.setAttribute('novalidate', true);
 
 
 const validateEmail = (email) => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$|^[a-zA-Z0-9._%+-]+@[а-яА-ЯёЁ0-9.-]+\.[рф]{2,3}$/;
   return re.test(String(email).toLowerCase());
-};
-
-const validateDomenEmail = (domen) => {
-  const re = new RegExp('.ru$');
-  return re.test(String(domen).toLowerCase());
 };
 
 const validatePhone = (phone) => {
@@ -47,13 +42,6 @@ form.onsubmit = () => {
   }
 
   if (!validateEmail(emailVal)) {
-    inputEmail.classList.add('error');
-    return false;
-  } else {
-    inputEmail.classList.remove('error');
-  }
-
-  if (!validateDomenEmail(emailVal)) {
     inputEmail.classList.add('error');
     return false;
   } else {
